@@ -1,0 +1,11 @@
+Asset IP Address,Asset Names,Asset OS Name,Asset OS Version,Vulnerability Title,Severity,Solution,Vulnerability Proof
+10.52.0.11,"bi-win-01,bi-win-01.example.test",Microsoft Windows Server 2019 Standard,10.0.17763,Google Chrome: Multiple Vulnerabilities,High,Upgrade Google Chrome to the latest supported release,Chrome version 129.0.6668.58
+10.52.0.11,bi-win-01,Microsoft Windows Server 2019 Standard,10.0.17763,Microsoft Windows: CVE-2025-0001: Security Update,Critical,Install KB5049981 for Microsoft Windows Server 2019,Missing KB5049981
+10.52.0.12,bi-win-02,Microsoft Windows Server 2022 Standard,10.0.20348,Microsoft Edge: Multiple Vulnerabilities,Medium,Upgrade Microsoft Edge to the latest supported release,Edge version 130.0.2849.46
+10.52.0.12,bi-win-02,Microsoft Windows Server 2022 Standard,10.0.20348,Microsoft SQL Server: Security Update,High,Install the latest Microsoft SQL Server cumulative update,Microsoft SQL Server 2019 build 15.0.4316.3
+10.52.0.13,bi-win-03,Microsoft Windows Server 2016 Standard,10.0.14393,MFSA-2025-01: Security vulnerabilities fixed in Firefox,High,Upgrade Mozilla Firefox to the latest supported release,Firefox 134.0
+10.52.0.13,bi-win-03,Microsoft Windows Server 2016 Standard,10.0.14393,CVE-2013-3900: MS13-098 Windows Authenticode Signature Validation,Medium,Install the applicable Microsoft security update,Unsigned executable validation is vulnerable
+10.52.0.14,bi-win-04,Microsoft Windows Server 2019 Standard,10.0.17763,7-Zip: Multiple Vulnerabilities,High,Upgrade 7-Zip to version 24.09 or later,7-Zip 24.07 installed
+10.52.0.14,bi-win-04,Microsoft Windows Server 2019 Standard,10.0.17763,TLS/SSL Birthday attacks on 64-bit block ciphers (SWEET32),Medium,Disable 3DES cipher suites,3DES cipher suite offered on port 443
+10.52.0.15,bi-win-05,Microsoft Windows Server 2022 Standard,10.0.20348,Microsoft VS Code: CVE-2025-1111,Low,Upgrade Microsoft Visual Studio Code,VS Code 1.96.2 installed
+10.52.0.16,bi-win-06,Microsoft Windows Server 2019 Standard,10.0.17763,Microsoft Windows: CVE-2022-0001: Intel: CVE-2022-0001 Branch History Injection,High,Install the latest firmware and operating-system updates,CPU mitigation not enabled
