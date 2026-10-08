@@ -1,0 +1,12 @@
+[
+    {
+        "hostname": "de-linux-01",
+        "ip": "10.59.0.21",
+        "os": "Red Hat Enterprise Linux Server release 8.10",
+        "os_version": "8.10",
+        "category": "R_SSH_HMAC",
+        "vuln_count": 1,
+        "severity": "Medium",
+        "title": "SSH Weak Message Authentication Code Algorithms"
+    }
+]

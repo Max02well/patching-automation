@@ -1,0 +1,12 @@
+[
+    {
+        "hostname": "de-linux-02",
+        "ip": "10.59.0.22",
+        "os": "Red Hat Enterprise Linux Server release 9.4",
+        "os_version": "9.4",
+        "category": "R_SSH_KEX",
+        "vuln_count": 1,
+        "severity": "Medium",
+        "title": "SSH Server Supports Weak Key Exchange Algorithms"
+    }
+]

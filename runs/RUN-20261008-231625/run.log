@@ -1,0 +1,31 @@
+
+======================================================================
+Processing Report ID: 52
+======================================================================
+[+] Report started: synthetic-52-d568fbd57124
+[STATUS] complete
+
+======================================================================
+Processing Report ID: 59
+======================================================================
+[+] Report started: synthetic-59-2fedc16b523a
+[STATUS] complete
+[+] Detected remediation categories: 7zip, CVE-2013-3900, CVE-2022-0001, ICMP, R_SSH_CBC, R_SSH_HMAC, R_SSH_KEX, RhelOS, W_TLS_Sweet32, chrome, edge, firefox, sql, sql2019, vscode, windowsos2019, winscp
+[+] JSON saved: inventory/7zip_jobs.json
+[+] JSON saved: inventory/CVE-2013-3900_jobs.json
+[+] JSON saved: inventory/CVE-2022-0001_jobs.json
+[+] JSON saved: l_inventory/ICMP_jobs.json
+[+] JSON saved: l_inventory/R_SSH_CBC_jobs.json
+[+] JSON saved: l_inventory/R_SSH_HMAC_jobs.json
+[+] JSON saved: l_inventory/R_SSH_KEX_jobs.json
+[+] JSON saved: l_inventory/RhelOS_jobs.json
+[+] JSON saved: inventory/W_TLS_Sweet32_jobs.json
+[+] JSON saved: inventory/chrome_jobs.json
+[+] JSON saved: inventory/edge_jobs.json
+[+] JSON saved: inventory/firefox_jobs.json
+[+] JSON saved: inventory/sql_jobs.json
+[+] JSON saved: inventory/sql2019_jobs.json
+[+] JSON saved: inventory/vscode_jobs.json
+[+] JSON saved: inventory/windowsos2019_jobs.json
+[+] JSON saved: inventory/winscp_jobs.json
+[+] Inventory created: inventory/remediation_inventory.ini

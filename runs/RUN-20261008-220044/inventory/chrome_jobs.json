@@ -1,0 +1,12 @@
+[
+    {
+        "hostname": "bi-win-01",
+        "ip": "10.52.0.11",
+        "os": "Microsoft Windows Server 2019 Standard",
+        "os_version": "10.0.17763",
+        "category": "chrome",
+        "vuln_count": 1,
+        "severity": "High",
+        "title": "Google Chrome: Multiple Vulnerabilities"
+    }
+]

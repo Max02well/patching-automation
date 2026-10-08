@@ -1,0 +1,22 @@
+[
+    {
+        "hostname": "bi-win-01",
+        "ip": "10.52.0.11",
+        "os": "Microsoft Windows Server 2019 Standard",
+        "os_version": "10.0.17763",
+        "category": "sql",
+        "vuln_count": 1,
+        "severity": "Critical",
+        "title": "Microsoft SQL Server: Security Update"
+    },
+    {
+        "hostname": "bi-win-02",
+        "ip": "10.52.0.12",
+        "os": "Microsoft Windows Server 2022 Standard",
+        "os_version": "10.0.20348",
+        "category": "sql",
+        "vuln_count": 1,
+        "severity": "High",
+        "title": "Microsoft SQL Server: Security Update"
+    }
+]

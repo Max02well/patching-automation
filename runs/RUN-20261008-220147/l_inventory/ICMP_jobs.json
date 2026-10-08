@@ -1,0 +1,12 @@
+[
+    {
+        "hostname": "de-linux-03",
+        "ip": "10.59.0.23",
+        "os": "Red Hat Enterprise Linux Server release 8.10",
+        "os_version": "8.10",
+        "category": "ICMP",
+        "vuln_count": 1,
+        "severity": "Low",
+        "title": "ICMP redirection enabled"
+    }
+]

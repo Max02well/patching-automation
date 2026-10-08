@@ -1,0 +1,552 @@
+Content-Type: multipart/alternative; boundary="===============7131402015530032360=="
+MIME-Version: 1.0
+From: gogomax017@gmail.com
+To: onyangogogo2002@gmail.com
+Subject: Automated Remediation Report - 2026-10-08 21:46
+
+--===============7131402015530032360==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+
+Dear Team,
+
+The automated vulnerability reporting/remediation scan has completed.
+Please find the remediation files across all teams attached for review. Please note that the vulnerable
+assets will be AUTOMATICALLY patched in the next 14 days if no remediation effort is made.
+
+Summary
+-------
+- 7ZIP: 1 host(s) affected
+- CVE-2013-3900: 1 host(s) affected
+- CVE-2022-0001: 1 host(s) affected
+- ICMP: 1 host(s) affected
+- R_SSH_CBC: 1 host(s) affected
+- R_SSH_HMAC: 1 host(s) affected
+- R_SSH_KEX: 1 host(s) affected
+- RHELOS: 2 host(s) affected
+- W_TLS_SWEET32: 1 host(s) affected
+- CHROME: 1 host(s) affected
+- EDGE: 1 host(s) affected
+- FIREFOX: 1 host(s) affected
+- SQL: 2 host(s) affected
+- SQL2019: 2 host(s) affected
+- VSCODE: 1 host(s) affected
+- WINDOWSOS2019: 1 host(s) affected
+- WINSCP: 1 host(s) affected
+
+Next Steps
+----------
+1. Review the attached inventory and jobs files.
+2. Log into Ansible Tower.
+3. Verify the scheduled remediation jobs.
+4. Confirm maintenance windows before execution.
+
+This is an automated message. Do not reply to this email.
+
+Regards,
+Cyber Prevent - Endpoint Security
+
+--===============7131402015530032360==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if mso]>
+<style type="text/css">
+table { border-collapse: collapse; }
+</style>
+<![endif]-->
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6f8;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#f4f6f8;">
+  <tr>
+    <td align="center" style="padding:20px 0;">
+
+      <table border="0" cellpadding="0" cellspacing="0" width="640" style="background-color:#ffffff;border:1px solid #e0e0e0;">
+
+        <!-- HEADER -->
+        <tr>
+          <td bgcolor="#1e5631" style="padding:20px 24px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:11px;color:#a5d6a7;letter-spacing:1px;">
+                  CYBER PREVENT - ENDPOINT SECURITY
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:19px;color:#ffffff;padding-top:4px;">
+                  Automated remediation report
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:13px;color:#c8e6c9;padding-top:2px;">
+                  2026-10-08 21:46
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- BODY -->
+        <tr>
+          <td style="padding:24px;">
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:14px;color:#444444;line-height:1.5;padding-bottom:16px;">
+                  Dear Team,<br><br>
+                  The automated vulnerability reporting/remediation scan has completed.
+                  Please find the remediation files across all teams attached for review.
+                </td>
+              </tr>
+            </table>
+
+            <!-- WARNING BANNER -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:20px;">
+              <tr>
+                <td bgcolor="#fff4e0" style="padding:10px 14px;border-left:3px solid #e69500;font-family:Arial,sans-serif;font-size:13px;color:#7a5300;">
+                  Vulnerable assets will be automatically patched in 14 days if no remediation effort is made.
+                </td>
+              </tr>
+            </table>
+
+            <!-- STAT CELLS -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:24px;">
+              <tr>
+                <td width="50%" bgcolor="#eef1f4" align="center" style="padding:14px;">
+                  <span style="font-family:Arial,sans-serif;font-size:20px;color:#1e5631;font-weight:bold;">17</span><br>
+                  <span style="font-family:Arial,sans-serif;font-size:11px;color:#666666;">Categories processed</span>
+                </td>
+                <td width="12"></td>
+                <td width="50%" bgcolor="#eef1f4" align="center" style="padding:14px;">
+                  <span style="font-family:Arial,sans-serif;font-size:20px;color:#1e5631;font-weight:bold;">20</span><br>
+                  <span style="font-family:Arial,sans-serif;font-size:11px;color:#666666;">Host-category hits</span>
+                </td>
+              </tr>
+            </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:8px;">
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:11px;color:#999999;letter-spacing:1px;">
+                  CATEGORY SUMMARY
+                </td>
+              </tr>
+            </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;margin-bottom:24px;">
+              <tr bgcolor="#eef1f4">
+                <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Category</td>
+                <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Status</td>
+              </tr>
+              
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">7-Zip</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">CVE-2013-3900</td>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Intel Branch History Injection</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">ICMP Redirect</td>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">SSH CBC Ciphers</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">SSH Weak HMAC</td>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">SSH Weak Key Exchange</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Red Hat Enterprise Linux</td>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">2 hosts affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">TLS SWEET32</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Google Chrome</td>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Microsoft Edge</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Mozilla Firefox</td>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Microsoft SQL Server</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">2 hosts affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Microsoft SQL Server 2019</td>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">2 hosts affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Microsoft VS Code</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">Windows Server 2019 OS Patching</td>
+           <td bgcolor="#f4f6f8" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+        <tr>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">WinSCP</td>
+           <td bgcolor="#ffffff" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#c0392b;">1 host affected</td>
+        </tr>
+            </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:8px;">
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:11px;color:#999999;letter-spacing:1px;">
+                  NEXT STEPS
+                </td>
+              </tr>
+            </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:20px;">
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:13px;color:#444444;line-height:1.7;">
+                  1. Review the attached inventory and jobs files.<br>
+                  2. Log into Ansible Tower.<br>
+                  3. Verify the scheduled remediation jobs.<br>
+                  4. Confirm maintenance windows before execution.
+                </td>
+              </tr>
+            </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:8px;border-top:1px solid #e0e0e0;">
+              <tr>
+                <td style="padding-top:16px;font-family:Arial,sans-serif;font-size:12px;color:#999999;">
+                  This is an automated message. Do not reply to this email.<br><br>
+                  Regards,<br>Cyber Prevent - Endpoint Security
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=7zip_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wNCIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjE0IiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE5IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNzc2MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICI3emlwIiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAxLA0KICAgICAg
+ICAic2V2ZXJpdHkiOiAiSGlnaCIsDQogICAgICAgICJ0aXRsZSI6ICI3LVppcDogTXVsdGlwbGUg
+VnVsbmVyYWJpbGl0aWVzIg0KICAgIH0NCl0=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=CVE-2013-3900_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wMyIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjEzIiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE2IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNDM5MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJDVkUtMjAxMy0zOTAwIiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAx
+LA0KICAgICAgICAic2V2ZXJpdHkiOiAiTWVkaXVtIiwNCiAgICAgICAgInRpdGxlIjogIkNWRS0y
+MDEzLTM5MDA6IE1TMTMtMDk4IFdpbmRvd3MgQXV0aGVudGljb2RlIFNpZ25hdHVyZSBWYWxpZGF0
+aW9uIg0KICAgIH0NCl0=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=CVE-2022-0001_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wNiIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjE2IiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE5IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNzc2MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJDVkUtMjAyMi0wMDAxIiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAx
+LA0KICAgICAgICAic2V2ZXJpdHkiOiAiSGlnaCIsDQogICAgICAgICJ0aXRsZSI6ICJNaWNyb3Nv
+ZnQgV2luZG93czogQ1ZFLTIwMjItMDAwMTogSW50ZWw6IENWRS0yMDIyLTAwMDEgQnJhbmNoIEhp
+c3RvcnkgSW5qZWN0aW9uIg0KICAgIH0NCl0=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=ICMP_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImRlLWxpbnV4LTAzIiwNCiAgICAgICAgImlw
+IjogIjEwLjU5LjAuMjMiLA0KICAgICAgICAib3MiOiAiUmVkIEhhdCBFbnRlcnByaXNlIExpbnV4
+IFNlcnZlciByZWxlYXNlIDguMTAiLA0KICAgICAgICAib3NfdmVyc2lvbiI6ICI4LjEwIiwNCiAg
+ICAgICAgImNhdGVnb3J5IjogIklDTVAiLA0KICAgICAgICAidnVsbl9jb3VudCI6IDEsDQogICAg
+ICAgICJzZXZlcml0eSI6ICJMb3ciLA0KICAgICAgICAidGl0bGUiOiAiSUNNUCByZWRpcmVjdGlv
+biBlbmFibGVkIg0KICAgIH0NCl0=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=R_SSH_CBC_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImRlLWxpbnV4LTAyIiwNCiAgICAgICAgImlw
+IjogIjEwLjU5LjAuMjIiLA0KICAgICAgICAib3MiOiAiUmVkIEhhdCBFbnRlcnByaXNlIExpbnV4
+IFNlcnZlciByZWxlYXNlIDkuNCIsDQogICAgICAgICJvc192ZXJzaW9uIjogIjkuNCIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJSX1NTSF9DQkMiLA0KICAgICAgICAidnVsbl9jb3VudCI6IDEsDQog
+ICAgICAgICJzZXZlcml0eSI6ICJIaWdoIiwNCiAgICAgICAgInRpdGxlIjogIlNTSCBDQkMgdnVs
+bmVyYWJpbGl0eSINCiAgICB9DQpd
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=R_SSH_HMAC_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImRlLWxpbnV4LTAxIiwNCiAgICAgICAgImlw
+IjogIjEwLjU5LjAuMjEiLA0KICAgICAgICAib3MiOiAiUmVkIEhhdCBFbnRlcnByaXNlIExpbnV4
+IFNlcnZlciByZWxlYXNlIDguMTAiLA0KICAgICAgICAib3NfdmVyc2lvbiI6ICI4LjEwIiwNCiAg
+ICAgICAgImNhdGVnb3J5IjogIlJfU1NIX0hNQUMiLA0KICAgICAgICAidnVsbl9jb3VudCI6IDEs
+DQogICAgICAgICJzZXZlcml0eSI6ICJNZWRpdW0iLA0KICAgICAgICAidGl0bGUiOiAiU1NIIFdl
+YWsgTWVzc2FnZSBBdXRoZW50aWNhdGlvbiBDb2RlIEFsZ29yaXRobXMiDQogICAgfQ0KXQ==
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=R_SSH_KEX_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImRlLWxpbnV4LTAyIiwNCiAgICAgICAgImlw
+IjogIjEwLjU5LjAuMjIiLA0KICAgICAgICAib3MiOiAiUmVkIEhhdCBFbnRlcnByaXNlIExpbnV4
+IFNlcnZlciByZWxlYXNlIDkuNCIsDQogICAgICAgICJvc192ZXJzaW9uIjogIjkuNCIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJSX1NTSF9LRVgiLA0KICAgICAgICAidnVsbl9jb3VudCI6IDEsDQog
+ICAgICAgICJzZXZlcml0eSI6ICJNZWRpdW0iLA0KICAgICAgICAidGl0bGUiOiAiU1NIIFNlcnZl
+ciBTdXBwb3J0cyBXZWFrIEtleSBFeGNoYW5nZSBBbGdvcml0aG1zIg0KICAgIH0NCl0=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=RhelOS_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImRlLWxpbnV4LTAxIiwNCiAgICAgICAgImlw
+IjogIjEwLjU5LjAuMjEiLA0KICAgICAgICAib3MiOiAiUmVkIEhhdCBFbnRlcnByaXNlIExpbnV4
+IFNlcnZlciByZWxlYXNlIDguMTAiLA0KICAgICAgICAib3NfdmVyc2lvbiI6ICI4LjEwIiwNCiAg
+ICAgICAgImNhdGVnb3J5IjogIlJoZWxPUyIsDQogICAgICAgICJ2dWxuX2NvdW50IjogMSwNCiAg
+ICAgICAgInNldmVyaXR5IjogIkNyaXRpY2FsIiwNCiAgICAgICAgInRpdGxlIjogIlJlZCBIYXQ6
+IENWRS0yMDI1LTAxMDE6IGtlcm5lbCBzZWN1cml0eSB1cGRhdGUiDQogICAgfSwNCiAgICB7DQog
+ICAgICAgICJob3N0bmFtZSI6ICJkZS1saW51eC0wNCIsDQogICAgICAgICJpcCI6ICIxMC41OS4w
+LjI0IiwNCiAgICAgICAgIm9zIjogIlJlZCBIYXQgRW50ZXJwcmlzZSBMaW51eCBTZXJ2ZXIgcmVs
+ZWFzZSA5LjQiLA0KICAgICAgICAib3NfdmVyc2lvbiI6ICI5LjQiLA0KICAgICAgICAiY2F0ZWdv
+cnkiOiAiUmhlbE9TIiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAxLA0KICAgICAgICAic2V2ZXJp
+dHkiOiAiSGlnaCIsDQogICAgICAgICJ0aXRsZSI6ICJSZWQgSGF0OiBDVkUtMjAyNC05OTk5OiBv
+cGVuc3NsIHNlY3VyaXR5IHVwZGF0ZSINCiAgICB9DQpd
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=W_TLS_Sweet32_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wNCIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjE0IiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE5IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNzc2MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJXX1RMU19Td2VldDMyIiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAx
+LA0KICAgICAgICAic2V2ZXJpdHkiOiAiTWVkaXVtIiwNCiAgICAgICAgInRpdGxlIjogIlRMUy9T
+U0wgQmlydGhkYXkgYXR0YWNrcyBvbiA2NC1iaXQgYmxvY2sgY2lwaGVycyAoU1dFRVQzMikiDQog
+ICAgfQ0KXQ==
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=chrome_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wMSIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjExIiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE5IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNzc2MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJjaHJvbWUiLA0KICAgICAgICAidnVsbl9jb3VudCI6IDEsDQogICAg
+ICAgICJzZXZlcml0eSI6ICJIaWdoIiwNCiAgICAgICAgInRpdGxlIjogIkdvb2dsZSBDaHJvbWU6
+IE11bHRpcGxlIFZ1bG5lcmFiaWxpdGllcyINCiAgICB9DQpd
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=edge_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wMiIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjEyIiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDIyIFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4yMDM0OCIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJlZGdlIiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAxLA0KICAgICAg
+ICAic2V2ZXJpdHkiOiAiTWVkaXVtIiwNCiAgICAgICAgInRpdGxlIjogIk1pY3Jvc29mdCBFZGdl
+OiBNdWx0aXBsZSBWdWxuZXJhYmlsaXRpZXMiDQogICAgfQ0KXQ==
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=firefox_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wMyIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjEzIiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE2IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNDM5MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJmaXJlZm94IiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAxLA0KICAg
+ICAgICAic2V2ZXJpdHkiOiAiSGlnaCIsDQogICAgICAgICJ0aXRsZSI6ICJNRlNBLTIwMjUtMDE6
+IFNlY3VyaXR5IHZ1bG5lcmFiaWxpdGllcyBmaXhlZCBpbiBGaXJlZm94Ig0KICAgIH0NCl0=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=sql_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wMSIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjExIiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE5IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNzc2MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJzcWwiLA0KICAgICAgICAidnVsbl9jb3VudCI6IDEsDQogICAgICAg
+ICJzZXZlcml0eSI6ICJDcml0aWNhbCIsDQogICAgICAgICJ0aXRsZSI6ICJNaWNyb3NvZnQgU1FM
+IFNlcnZlcjogU2VjdXJpdHkgVXBkYXRlIg0KICAgIH0sDQogICAgew0KICAgICAgICAiaG9zdG5h
+bWUiOiAiYmktd2luLTAyIiwNCiAgICAgICAgImlwIjogIjEwLjUyLjAuMTIiLA0KICAgICAgICAi
+b3MiOiAiTWljcm9zb2Z0IFdpbmRvd3MgU2VydmVyIDIwMjIgU3RhbmRhcmQiLA0KICAgICAgICAi
+b3NfdmVyc2lvbiI6ICIxMC4wLjIwMzQ4IiwNCiAgICAgICAgImNhdGVnb3J5IjogInNxbCIsDQog
+ICAgICAgICJ2dWxuX2NvdW50IjogMSwNCiAgICAgICAgInNldmVyaXR5IjogIkhpZ2giLA0KICAg
+ICAgICAidGl0bGUiOiAiTWljcm9zb2Z0IFNRTCBTZXJ2ZXI6IFNlY3VyaXR5IFVwZGF0ZSINCiAg
+ICB9DQpd
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=sql2019_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wMSIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjExIiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE5IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNzc2MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJzcWwyMDE5IiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAxLA0KICAg
+ICAgICAic2V2ZXJpdHkiOiAiQ3JpdGljYWwiLA0KICAgICAgICAidGl0bGUiOiAiTWljcm9zb2Z0
+IFNRTCBTZXJ2ZXI6IFNlY3VyaXR5IFVwZGF0ZSINCiAgICB9LA0KICAgIHsNCiAgICAgICAgImhv
+c3RuYW1lIjogImJpLXdpbi0wMiIsDQogICAgICAgICJpcCI6ICIxMC41Mi4wLjEyIiwNCiAgICAg
+ICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAyMDIyIFN0YW5kYXJkIiwNCiAgICAg
+ICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4yMDM0OCIsDQogICAgICAgICJjYXRlZ29yeSI6ICJzcWwy
+MDE5IiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAxLA0KICAgICAgICAic2V2ZXJpdHkiOiAiSGln
+aCIsDQogICAgICAgICJ0aXRsZSI6ICJNaWNyb3NvZnQgU1FMIFNlcnZlcjogU2VjdXJpdHkgVXBk
+YXRlIg0KICAgIH0NCl0=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=vscode_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wNSIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjE1IiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDIyIFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4yMDM0OCIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJ2c2NvZGUiLA0KICAgICAgICAidnVsbl9jb3VudCI6IDEsDQogICAg
+ICAgICJzZXZlcml0eSI6ICJMb3ciLA0KICAgICAgICAidGl0bGUiOiAiTWljcm9zb2Z0IFZTIENv
+ZGU6IENWRS0yMDI1LTExMTEiDQogICAgfQ0KXQ==
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=windowsos2019_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImJpLXdpbi0wMSIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjExIiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDE5IFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4xNzc2MyIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJ3aW5kb3dzb3MyMDE5IiwNCiAgICAgICAgInZ1bG5fY291bnQiOiAx
+LA0KICAgICAgICAic2V2ZXJpdHkiOiAiQ3JpdGljYWwiLA0KICAgICAgICAidGl0bGUiOiAiTWlj
+cm9zb2Z0IFdpbmRvd3M6IENWRS0yMDI1LTAwMDE6IFNlY3VyaXR5IFVwZGF0ZSINCiAgICB9DQpd
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=winscp_jobs.json
+
+Ww0KICAgIHsNCiAgICAgICAgImhvc3RuYW1lIjogImRlLXdpbi0wMSIsDQogICAgICAgICJpcCI6
+ICIxMC41Mi4wLjE3IiwNCiAgICAgICAgIm9zIjogIk1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciAy
+MDIyIFN0YW5kYXJkIiwNCiAgICAgICAgIm9zX3ZlcnNpb24iOiAiMTAuMC4yMDM0OCIsDQogICAg
+ICAgICJjYXRlZ29yeSI6ICJ3aW5zY3AiLA0KICAgICAgICAidnVsbl9jb3VudCI6IDEsDQogICAg
+ICAgICJzZXZlcml0eSI6ICJNZWRpdW0iLA0KICAgICAgICAidGl0bGUiOiAiV2luU0NQOiBDVkUt
+MjAyNS0yMjIyIg0KICAgIH0NCl0=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=remediation_inventory.ini
+
+Wzd6aXBdDQpiaS13aW4tMDQNCg0KW0NWRS0yMDEzLTM5MDBdDQpiaS13aW4tMDMNCg0KW0NWRS0y
+MDIyLTAwMDFdDQpiaS13aW4tMDYNCg0KW1dfVExTX1N3ZWV0MzJdDQpiaS13aW4tMDQNCg0KW2No
+cm9tZV0NCmJpLXdpbi0wMQ0KDQpbZWRnZV0NCmJpLXdpbi0wMg0KDQpbZmlyZWZveF0NCmJpLXdp
+bi0wMw0KDQpbc3FsXQ0KYmktd2luLTAxDQpiaS13aW4tMDINCg0KW3NxbDIwMTldDQpiaS13aW4t
+MDENCmJpLXdpbi0wMg0KDQpbdnNjb2RlXQ0KYmktd2luLTA1DQoNClt3aW5kb3dzb3MyMDE5XQ0K
+Ymktd2luLTAxDQoNClt3aW5zY3BdDQpkZS13aW4tMDENCg0KW2FsbF93aW5kb3dzOmNoaWxkcmVu
+XQ0KN3ppcA0KQ1ZFLTIwMTMtMzkwMA0KQ1ZFLTIwMjItMDAwMQ0KV19UTFNfU3dlZXQzMg0KY2hy
+b21lDQplZGdlDQpmaXJlZm94DQpzcWwNCnNxbDIwMTkNCnZzY29kZQ0Kd2luZG93c29zMjAxOQ0K
+d2luc2NwDQoNClthbGxfd2luZG93czp2YXJzXQ0KcmVtZWRpYXRpb25fY2F0ZWdvcmllcz03emlw
+LENWRS0yMDEzLTM5MDAsQ1ZFLTIwMjItMDAwMSxXX1RMU19Td2VldDMyLGNocm9tZSxlZGdlLGZp
+cmVmb3gsc3FsLHNxbDIwMTksdnNjb2RlLHdpbmRvd3NvczIwMTksd2luc2Nw
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=l_remediation_inventory.ini
+
+W0lDTVBdDQoxMC41OS4wLjIzDQoNCltSX1NTSF9DQkNdDQoxMC41OS4wLjIyDQoNCltSX1NTSF9I
+TUFDXQ0KMTAuNTkuMC4yMQ0KDQpbUl9TU0hfS0VYXQ0KMTAuNTkuMC4yMg0KDQpbUmhlbE9TXQ0K
+MTAuNTkuMC4yMQ0KMTAuNTkuMC4yNA0KDQpbbGludXg6Y2hpbGRyZW5dDQpJQ01QDQpSX1NTSF9D
+QkMNClJfU1NIX0hNQUMNClJfU1NIX0tFWA0KUmhlbE9TDQoNCltsaW51eDp2YXJzXQ0KcmVtZWRp
+YXRpb25fY2F0ZWdvcmllcz1JQ01QLFJfU1NIX0NCQyxSX1NTSF9ITUFDLFJfU1NIX0tFWCxSaGVs
+T1M=
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=remediation_control.json
+
+ew0KICAgICJyZW1lZGlhdGlvbl9jYXRlZ29yaWVzIjogWw0KICAgICAgICAiN3ppcCIsDQogICAg
+ICAgICJDVkUtMjAxMy0zOTAwIiwNCiAgICAgICAgIkNWRS0yMDIyLTAwMDEiLA0KICAgICAgICAi
+V19UTFNfU3dlZXQzMiIsDQogICAgICAgICJjaHJvbWUiLA0KICAgICAgICAiZWRnZSIsDQogICAg
+ICAgICJmaXJlZm94IiwNCiAgICAgICAgInNxbCIsDQogICAgICAgICJzcWwyMDE5IiwNCiAgICAg
+ICAgInZzY29kZSIsDQogICAgICAgICJ3aW5kb3dzb3MyMDE5IiwNCiAgICAgICAgIndpbnNjcCIN
+CiAgICBdDQp9
+
+--===============7131402015530032360==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=l_remediation_control.json
+
+ew0KICAgICJyZW1lZGlhdGlvbl9jYXRlZ29yaWVzIjogWw0KICAgICAgICAiSUNNUCIsDQogICAg
+ICAgICJSX1NTSF9DQkMiLA0KICAgICAgICAiUl9TU0hfSE1BQyIsDQogICAgICAgICJSX1NTSF9L
+RVgiLA0KICAgICAgICAiUmhlbE9TIg0KICAgIF0NCn0=
+
+--===============7131402015530032360==--

@@ -1,0 +1,412 @@
+Content-Type: multipart/alternative; boundary="===============7717871756332078529=="
+MIME-Version: 1.0
+From: gogomax017@gmail.com
+To: 
+Subject: Remediation Summary - DE Team
+
+--===============7717871756332078529==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Team,
+
+The latest vulnerability/remediation scan has completed.
+
+Total categories : 8
+Total assets     : 6
+
+
+ICMP Redirect
+-------------
+de-linux-03 (10.59.0.23)
+
+SSH CBC Ciphers
+---------------
+de-linux-02 (10.59.0.22)
+
+SSH Weak HMAC
+-------------
+de-linux-01 (10.59.0.21)
+
+SSH Weak Key Exchange
+---------------------
+de-linux-02 (10.59.0.22)
+
+Red Hat Enterprise Linux
+------------------------
+de-linux-01 (10.59.0.21)
+de-linux-04 (10.59.0.24)
+
+Microsoft SQL Server
+--------------------
+bi-win-01 (10.52.0.11)
+
+Microsoft SQL Server 2019
+-------------------------
+bi-win-01 (10.52.0.11)
+
+WinSCP
+------
+de-win-01 (10.52.0.17)
+
+
+Regards,
+Cyber Prevent - Endpoint Security
+
+--===============7717871756332078529==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if mso]>
+<style type="text/css">
+table { border-collapse: collapse; }
+</style>
+<![endif]-->
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6f8;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#f4f6f8;">
+  <tr>
+    <td align="center" style="padding:20px 0;">
+
+      <table border="0" cellpadding="0" cellspacing="0" width="640" style="background-color:#ffffff;border:1px solid #e0e0e0;">
+
+        <!-- HEADER -->
+        <tr>
+          <td bgcolor="#1e5631" style="padding:20px 24px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:11px;color:#a5d6a7;letter-spacing:1px;">
+                  CYBER PREVENT - ENDPOINT SECURITY
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:19px;color:#ffffff;padding-top:4px;">
+                  Remediation summary
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:13px;color:#c8e6c9;padding-top:2px;">
+                  DE Team
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- BODY -->
+        <tr>
+          <td style="padding:24px;">
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:14px;color:#444444;line-height:1.5;padding-bottom:16px;">
+                  Dear Team,<br><br>
+                  The latest vulnerability scan has completed. Assets below are grouped by remediation category.
+                </td>
+              </tr>
+            </table>
+
+            <!-- WARNING BANNER -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:20px;">
+              <tr>
+                <td bgcolor="#fff4e0" style="padding:10px 14px;border-left:3px solid #e69500;font-family:Arial,sans-serif;font-size:13px;color:#7a5300;">
+                  Unremediated assets will be automatically patched in 14 days.
+                </td>
+              </tr>
+            </table>
+
+            <!-- STAT CELLS -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:24px;">
+              <tr>
+                <td width="50%" bgcolor="#eef1f4" align="center" style="padding:14px;">
+                  <span style="font-family:Arial,sans-serif;font-size:20px;color:#1e5631;font-weight:bold;">8</span><br>
+                  <span style="font-family:Arial,sans-serif;font-size:11px;color:#666666;">Categories affected</span>
+                </td>
+                <td width="12"></td>
+                <td width="50%" bgcolor="#eef1f4" align="center" style="padding:14px;">
+                  <span style="font-family:Arial,sans-serif;font-size:20px;color:#1e5631;font-weight:bold;">6</span><br>
+                  <span style="font-family:Arial,sans-serif;font-size:11px;color:#666666;">Total assets</span>
+                </td>
+              </tr>
+            </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:10px;">
+              <tr>
+                <td style="font-family:Arial,sans-serif;font-size:11px;color:#999999;letter-spacing:1px;">
+                  AFFECTED CATEGORIES
+                </td>
+              </tr>
+            </table>
+
+            
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;border-collapse:collapse;">
+          <tr>
+            <td bgcolor="#1e5631" style="padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">ICMP Redirect</td>
+                  <td align="right" style="font-family:Arial,sans-serif;font-size:12px;color:#c8e6c9;">1 host</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr bgcolor="#eef1f4">
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Hostname</td>
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">IP address</td>
+                </tr>
+                
+            <tr>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">de-linux-03</td>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.59.0.23</td>
+            </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;border-collapse:collapse;">
+          <tr>
+            <td bgcolor="#1e5631" style="padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">SSH CBC Ciphers</td>
+                  <td align="right" style="font-family:Arial,sans-serif;font-size:12px;color:#c8e6c9;">1 host</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr bgcolor="#eef1f4">
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Hostname</td>
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">IP address</td>
+                </tr>
+                
+            <tr>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">de-linux-02</td>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.59.0.22</td>
+            </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;border-collapse:collapse;">
+          <tr>
+            <td bgcolor="#1e5631" style="padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">SSH Weak HMAC</td>
+                  <td align="right" style="font-family:Arial,sans-serif;font-size:12px;color:#c8e6c9;">1 host</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr bgcolor="#eef1f4">
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Hostname</td>
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">IP address</td>
+                </tr>
+                
+            <tr>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">de-linux-01</td>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.59.0.21</td>
+            </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;border-collapse:collapse;">
+          <tr>
+            <td bgcolor="#1e5631" style="padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">SSH Weak Key Exchange</td>
+                  <td align="right" style="font-family:Arial,sans-serif;font-size:12px;color:#c8e6c9;">1 host</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr bgcolor="#eef1f4">
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Hostname</td>
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">IP address</td>
+                </tr>
+                
+            <tr>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">de-linux-02</td>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.59.0.22</td>
+            </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;border-collapse:collapse;">
+          <tr>
+            <td bgcolor="#1e5631" style="padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">Red Hat Enterprise Linux</td>
+                  <td align="right" style="font-family:Arial,sans-serif;font-size:12px;color:#c8e6c9;">2 hosts</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr bgcolor="#eef1f4">
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Hostname</td>
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">IP address</td>
+                </tr>
+                
+            <tr>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">de-linux-01</td>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.59.0.21</td>
+            </tr>
+            <tr>
+              <td bgcolor="#f4f6f8" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">de-linux-04</td>
+              <td bgcolor="#f4f6f8" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.59.0.24</td>
+            </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;border-collapse:collapse;">
+          <tr>
+            <td bgcolor="#1e5631" style="padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">Microsoft SQL Server</td>
+                  <td align="right" style="font-family:Arial,sans-serif;font-size:12px;color:#c8e6c9;">1 host</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr bgcolor="#eef1f4">
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Hostname</td>
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">IP address</td>
+                </tr>
+                
+            <tr>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">bi-win-01</td>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.52.0.11</td>
+            </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;border-collapse:collapse;">
+          <tr>
+            <td bgcolor="#1e5631" style="padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">Microsoft SQL Server 2019</td>
+                  <td align="right" style="font-family:Arial,sans-serif;font-size:12px;color:#c8e6c9;">1 host</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr bgcolor="#eef1f4">
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Hostname</td>
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">IP address</td>
+                </tr>
+                
+            <tr>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">bi-win-01</td>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.52.0.11</td>
+            </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;border-collapse:collapse;">
+          <tr>
+            <td bgcolor="#1e5631" style="padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#ffffff;">WinSCP</td>
+                  <td align="right" style="font-family:Arial,sans-serif;font-size:12px;color:#c8e6c9;">1 host</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+                <tr bgcolor="#eef1f4">
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">Hostname</td>
+                  <td style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:11px;color:#555555;">IP address</td>
+                </tr>
+                
+            <tr>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">de-win-01</td>
+              <td bgcolor="#ffffff" style="padding:6px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#555555;">10.52.0.17</td>
+            </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:8px;border-top:1px solid #e0e0e0;">
+              <tr>
+                <td style="padding-top:16px;font-family:Arial,sans-serif;font-size:12px;color:#999999;">
+                  This is an automated message. Do not reply to this email.<br><br>
+                  Regards,<br>Cyber Prevent - Endpoint Security
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+--===============7717871756332078529==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=de_team_remediation_inventory.ini
+
+W3dpbnNjcF0NCmRlLXdpbi0wMQ0KDQpbc3FsXQ0KYmktd2luLTAxDQoNCltzcWwyMDE5XQ0KYmkt
+d2luLTAxDQoNClthbGxfd2luZG93czpjaGlsZHJlbl0NCndpbnNjcA0Kc3FsDQpzcWwyMDE5DQoN
+ClthbGxfd2luZG93czp2YXJzXQ0KcmVtZWRpYXRpb25fY2F0ZWdvcmllcz1zcWwsc3FsMjAxOSx3
+aW5zY3A=
+
+--===============7717871756332078529==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=de_team_l_remediation_inventory.ini
+
+W1JfU1NIX0hNQUNdDQoxMC41OS4wLjIxDQoNCltSX1NTSF9LRVhdDQoxMC41OS4wLjIyDQoNCltS
+X1NTSF9DQkNdDQoxMC41OS4wLjIyDQoNCltJQ01QXQ0KMTAuNTkuMC4yMw0KDQpbUmhlbE9TXQ0K
+MTAuNTkuMC4yMQ0KMTAuNTkuMC4yNA0KDQpbbGludXg6Y2hpbGRyZW5dDQpSX1NTSF9ITUFDDQpS
+X1NTSF9LRVgNClJfU1NIX0NCQw0KSUNNUA0KUmhlbE9TDQoNCltsaW51eDp2YXJzXQ0KcmVtZWRp
+YXRpb25fY2F0ZWdvcmllcz1JQ01QLFJfU1NIX0NCQyxSX1NTSF9ITUFDLFJfU1NIX0tFWCxSaGVs
+T1M=
+
+--===============7717871756332078529==--

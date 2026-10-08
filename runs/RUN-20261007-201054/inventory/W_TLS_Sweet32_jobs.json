@@ -1,0 +1,12 @@
+[
+    {
+        "hostname": "bi-win-04",
+        "ip": "10.52.0.14",
+        "os": "Microsoft Windows Server 2019 Standard",
+        "os_version": "10.0.17763",
+        "category": "W_TLS_Sweet32",
+        "vuln_count": 1,
+        "severity": "Medium",
+        "title": "TLS/SSL Birthday attacks on 64-bit block ciphers (SWEET32)"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "hostname": "de-linux-01",
+        "ip": "10.59.0.21",
+        "os": "Red Hat Enterprise Linux Server release 8.10",
+        "os_version": "8.10",
+        "category": "RhelOS",
+        "vuln_count": 1,
+        "severity": "Critical",
+        "title": "Red Hat: CVE-2025-0101: kernel security update"
+    },
+    {
+        "hostname": "de-linux-04",
+        "ip": "10.59.0.24",
+        "os": "Red Hat Enterprise Linux Server release 9.4",
+        "os_version": "9.4",
+        "category": "RhelOS",
+        "vuln_count": 1,
+        "severity": "High",
+        "title": "Red Hat: CVE-2024-9999: openssl security update"
+    }
+]

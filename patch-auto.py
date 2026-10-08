@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import requests
 from requests.auth import HTTPBasicAuth
 import time
@@ -17,15 +16,24 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load the environment variables from the .env file
+load_dotenv()
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # =========================================================
 # INSIGHTVM CONFIG
 # =========================================================
-IVM_URL = "https://172.16.10.10:3780"
-IVM_USER = "useradmin"
-IVM_PASS = "jhdppoedf9845"
+# Access InsightVM credentials and URL from environment variables
+IVM_URL = os.getenv("IVM_URL")
+IVM_PASS = os.getenv("IVM_PASS")
+IVM_USER = os.getenv("IVM_USER")
+# IVM_URL = "http://127.0.0.1:8765"
+# IVM_USER = "user"
+# IVM_PASS = "password"
+# REPORT_IDS = ["52", "59"]
 REPORT_IDS = [
     #"66" #Service Assurance
     #"53", #Big Data
@@ -46,13 +54,19 @@ REPORT_IDS = [
     #"32"
 ]
 
+if os.getenv("PATCH_REPORT_IDS"):
+    REPORT_IDS = [r.strip() for r in os.getenv("PATCH_REPORT_IDS").split(",") if r.strip()]
+
+DRY_RUN = os.getenv("DRY_RUN") == "1"
+FAILURES = []   # collected so the process exits non-zero
+
 # =========================================================
 # GITLAB CONFIG
 # =========================================================
-GITLAB_URL = "http://svdt.domain.local"
-GITLAB_TOKEN = "sdfjgotjjdmf44j55n"
-GITLAB_PROJECT_ID = "3664"
-GITLAB_BRANCH = "develop"
+GITLAB_URL = os.getenv("GITLAB_URL")
+GITLAB_TOKEN = os.getenv("GITLAB_TOKEN")
+GITLAB_PROJECT_ID = os.getenv("GITLAB_PROJECT_ID")
+GITLAB_BRANCH = os.getenv("GITLAB_BRANCH", "main")  # Default to "main" if not set
 
 # GitLab repository paths
 #CONTROL_PATH = "inventory/remediation_control.json"
@@ -195,17 +209,32 @@ CATEGORY_NAMES = {
 # =========================================================
 # EMAIL CONFIG
 # =========================================================
-SMTP_SERVER = "172.28.120.58"
-SMTP_PORT = 25
+EMAIL_MODE = os.getenv("EMAIL_MODE", "file").lower()
 
-EMAIL_FROM = "cybermdm@safaricom.co.ke"
+SMTP_SERVER = os.getenv("SMTP_SERVER", "172.28.120.58")
+SMTP_PORT = os.getenv("SMTP_PORT", 25)
 
+EMAIL_FROM = os.getenv("EMAIL_FROM", "gogomax017@gmail.com")
+# EMAIL_TO = os.getenv("EMAIL_TO", "onyangogogo2002@gmail.com")
 EMAIL_TO = [
-    #"endpointsecurity@safaricomO365.onmicrosoft.com",
-    "sgogo@safaricom.co.ke"
-    #"gmunga@safaricom.co.ke"
-
+    email.strip()
+    for email in os.getenv(
+        "EMAIL_TO",
+        "onyangogogo2002@gmail.com"
+    ).split(",")
+    if email.strip()
 ]
+
+EMAIL_TEST_DIR = os.getenv(
+    "EMAIL_TEST_DIR",
+    "email_test"
+)
+
+# EMAIL_TO = [
+#     #"endpointsecurity@safaricomO365.onmicrosoft.com",
+#     # "sgogo@safaricom.co.ke"
+#     #"gmunga@safaricom.co.ke"
+# ]
 
 EMAIL_SUBJECT = "Automated Remediation Report - {date}"
 
@@ -228,7 +257,7 @@ REPORT_EMAILS = {
         "team": "Big Data Team",
         "emails": [
             #"database@domain.local"
-            "felixwano5@gmail.com"
+            "max@gmail.com"
         ]
     },
 
@@ -257,7 +286,7 @@ REPORT_EMAILS = {
         "team": "EIOM Team",
         "emails": [
             #"infrastructure@domain.local"
-            "ochienggee@gmail.com"
+            "max@gmail.com"
         ]
     },
 
@@ -300,7 +329,7 @@ REPORT_EMAILS = {
         "team": "NMS Team",
         "emails": [
             #"infrastructure@domain.local"
-            "ochienggee@gmail.com"
+            "max@gmail.com"
         ]
     },
 
@@ -308,7 +337,7 @@ REPORT_EMAILS = {
         "team": "G3 Jumpboxes Team",
         "emails": [
             #"infrastructure@domain.local"
-            "ochienggee@gmail.com"
+            "max@gmail.com"
         ]
     },
 
@@ -316,7 +345,7 @@ REPORT_EMAILS = {
         "team": "IT Infra Team",
         "emails": [
             #"infrastructure@domain.local"
-            "ochienggee@gmail.com"
+            "mx2@gmail.com"
         ]
     }
 
@@ -980,6 +1009,19 @@ def save_remediation_control(categories, filename):
 # PUSH TO GITLAB
 # =========================================================
 def push_to_gitlab(local_file, gitlab_path):
+    #added will remove for prod
+    if DRY_RUN:
+        print(f"[DRY RUN] Would upload to GitLab: {gitlab_path}")
+        return
+    
+    if not GITLAB_URL:
+        raise RuntimeError("GITLAB_URL is not configured")
+
+    if not GITLAB_TOKEN:
+        raise RuntimeError("GITLAB_TOKEN is not configured")
+
+    if not GITLAB_PROJECT_ID:
+        raise RuntimeError("GITLAB_PROJECT_ID is not configured")
 
     headers = {
         "PRIVATE-TOKEN": GITLAB_TOKEN
@@ -1045,9 +1087,9 @@ def push_to_gitlab(local_file, gitlab_path):
 
     else:
 
+        FAILURES.append(f"gitlab:{gitlab_path}")
         print(
-            f"FAILED upload {gitlab_path}: "
-            f"{response.status_code}"
+            f"FAILED upload {gitlab_path}: {response.status_code}"
         )
 
         print(response.text)
@@ -1212,6 +1254,31 @@ def push_to_gitlab(local_file, gitlab_path):
 ###ends here        print(f"FAILED sending email: {e}")
 
 
+# =========================================================
+# SAVE EMAIL LOCALLY FOR TESTING
+# =========================================================
+def save_email_locally(msg, filename):
+    """
+    Save a complete MIME email as an .eml file.
+
+    This allows local testing without SMTP.
+    The resulting .eml file can be opened in Outlook
+    or another mail client.
+    """
+
+    os.makedirs(EMAIL_TEST_DIR, exist_ok=True)
+
+    filepath = os.path.join(
+        EMAIL_TEST_DIR,
+        filename
+    )
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(msg.as_string())
+
+    print(f"[+] Test email saved: {filepath}")
+
+    return filepath
 
 
 # =========================================================
@@ -1263,7 +1330,6 @@ Cyber Prevent - Endpoint Security
     # CATEGORY SUMMARY ROWS (table-based, Outlook safe)
     # =================================================
     category_rows = ""
-
     for i, item in enumerate(sorted(category_summary, key=lambda x: x["category"])):
 
         display_name = CATEGORY_NAMES.get(item["category"], item["category"])
@@ -1279,8 +1345,8 @@ Cyber Prevent - Endpoint Security
 
         category_rows += f"""
         <tr>
-          <td bgcolor="{row_bg}" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">{display_name}</td>
-          <td bgcolor="{row_bg}" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:{status_color};">{status_text}</td>
+           <td bgcolor="{row_bg}" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:#222222;">{display_name}</td>
+           <td bgcolor="{row_bg}" style="padding:7px 12px;border:1px solid #dddddd;font-family:Arial,sans-serif;font-size:12px;color:{status_color};">{status_text}</td>
         </tr>"""
 
     # =================================================
@@ -1446,26 +1512,53 @@ table {{ border-collapse: collapse; }}
         msg.attach(part)
 
         print(f"[+] Attached: {filename}")
+        
+    # EMAIL DELIVERY
+    if EMAIL_MODE == "file":
+        filename = (
+            f"remediation_report_"
+            f"{datetime.now().strftime('%Y%m%d_%H%M%S')}.eml"
+        )
 
-    try:
+        save_email_locally(
+            msg,
+            filename
+        )
 
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+        print(
+            f"[+] EMAIL_MODE=file "
+            f"- no SMTP connection attempted"
+        )
 
-            server.ehlo()
+    elif EMAIL_MODE == "smtp":
 
-            server.sendmail(
-                EMAIL_FROM,
-                EMAIL_TO,
-                msg.as_string()
-            )
+        try:
 
-        print(f"[+] Email sent to: {', '.join(EMAIL_TO)}")
+            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
 
-    except Exception as e:
+                server.ehlo()
 
-        print(f"FAILED sending email: {e}")
+                server.sendmail(
+                    EMAIL_FROM,
+                    EMAIL_TO,
+                    msg.as_string()
+                )
 
+            print(f"[+] Email sent to: {', '.join(EMAIL_TO)}")
 
+        except Exception as e:
+
+            print(f"FAILED sending email: {e}")
+            FAILURES.append("email")
+
+    else:
+        print(
+            f"[!] Unknown EMAIL_MODE: {EMAIL_MODE}"
+        )
+
+        print(
+            "[!] Valid values are: file, smtp"
+        )
 #new function        
 #sends emails to individual teams
 # =========================================================
@@ -1679,17 +1772,78 @@ table {{ border-collapse: collapse; }}
         part.add_header("Content-Disposition", f"attachment; filename={filename}")
         msg.attach(part)
         print(f"[+] Attached: {filename}")
+    if EMAIL_MODE == "file":
 
-    try:
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-            server.sendmail(EMAIL_FROM, recipients, msg.as_string())
-        print(f"[+] Team summary email sent to {', '.join(recipients)}")
-    except Exception as e:
-        print(f"FAILED sending team email: {e}")
+        safe_report_name = re.sub(
+            r"[^A-Za-z0-9_-]+",
+            "_",
+            report_name
+        )
+
+        filename = (
+            f"team_{safe_report_name}_"
+            f"{datetime.now().strftime('%Y%m%d_%H%M%S')}.eml"
+        )
+
+        save_email_locally(
+            msg,
+            filename
+        )
+
+        print(
+            f"[+] Team email saved locally "
+            f"for {report_name}"
+        )
+
+    elif EMAIL_MODE == "smtp":
+        try:
+            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+                server.sendmail(EMAIL_FROM, recipients, msg.as_string())
+            print(f"[+] Team summary email sent to {', '.join(recipients)}")
+        except Exception as e:
+            print(f"FAILED sending team email: {e}")
+            FAILURES.append("email")
+    else:
+        print(
+            f"[!] Unknown EMAIL_MODE: {EMAIL_MODE}"
+        )
 
 
+#=========================================================
+# SAVE SUMMARY JSON
+#=========================================================
+def write_summary(report_asset_map, all_category_jobs, generated_files, report_inventory_files):
+    categories = []
+    for cat, jobs in sorted(all_category_jobs.items()):
+        sev = {}
+        for j in jobs:
+            sev[j["severity"]] = sev.get(j["severity"], 0) + 1
+        categories.append({
+            "category": cat,
+            "display_name": CATEGORY_NAMES.get(cat, cat),
+            "platform": "windows" if cat in WINDOWS_CATEGORIES else "linux",
+            "hosts": len(jobs),
+            "severity": sev,
+        })
+    summary = {
+        "dry_run": DRY_RUN,
+        "reports": [
+            {"report_id": rid,
+             "team": REPORT_EMAILS.get(rid, {}).get("team", rid),
+             "assets": len(a)}
+            for rid, a in report_asset_map.items()
+        ],
+        "categories": categories,
+        "files": [os.path.relpath(f) for f in generated_files],
+        "team_files": {rid: [os.path.relpath(f) for f in fs]
+                       for rid, fs in report_inventory_files.items()},
+        "failures": FAILURES,
+    }
+    with open("summary.json", "w") as f:
+        json.dump(summary, f, indent=2)
 
 
+#=========================================================
 
 
 
@@ -1704,7 +1858,7 @@ if __name__ == "__main__":
 
     assets = {}
 
-     #
+    #
     # Stores assets per report
     #
     report_asset_map = {}
@@ -1859,19 +2013,18 @@ if __name__ == "__main__":
         )
 
         generated_files.append(json_file)
-
         # =================================================
         # PUSH CATEGORY JSON TO GITLAB
         # =================================================
-       # if category in WINDOWS_CATEGORIES:
-       #     gitlab_json_path = f"inventory/{category}_jobs.json"
-       # else:
-       #     gitlab_json_path = f"l_inventory/{category}_jobs.json"
+        # if category in WINDOWS_CATEGORIES:
+        #     gitlab_json_path = f"inventory/{category}_jobs.json"
+        # else:
+        #     gitlab_json_path = f"l_inventory/{category}_jobs.json"
 
-       # push_to_gitlab(
-       #     json_file,
-       #     gitlab_json_path
-       # )
+        # push_to_gitlab(
+        #     json_file,
+        #     gitlab_json_path
+        # )
 
     # =====================================================
     # WINDOWS INVENTORY
@@ -1883,7 +2036,7 @@ if __name__ == "__main__":
     #    "all_windows",
     #    WINDOWS_CATEGORIES
     #)
- #OR
+    #OR
     windows_inventory = create_inventory(
         category_jobs=all_category_jobs,
         filename="inventory/remediation_inventory.ini",
@@ -2040,9 +2193,7 @@ if __name__ == "__main__":
     # SEND EMAIL
     # =====================================================
     print("[+] Sending remediation report email...")
-
     summary = "\n".join(summary_lines) if summary_lines else "No data"
-
     send_email(generated_files, summary, category_summary_data)
 
     #print("\n[+] Remediation automation completed")
@@ -2051,17 +2202,24 @@ if __name__ == "__main__":
     # =====================================================
     # SEND TEAM SUMMARY EMAILS
     # =====================================================
-    for report_id, assets in report_asset_map.items():
+    for report_id, team_assets in report_asset_map.items():
 
         if report_id not in REPORT_EMAILS:
             continue
 
         send_report_summary_email(
             report_name=REPORT_EMAILS[report_id]["team"],
-            assets=assets,
+            assets=team_assets,
             recipients=REPORT_EMAILS[report_id]["emails"],
             files=report_inventory_files.get(report_id, []) #added later
         )
 
     print("\n[+] Remediation automation completed")
     print("[!] Tower patching runs on its configured schedule.")
+    
+    # =====================================================
+    # WRITE SUMMARY JSON    
+    write_summary(report_asset_map, all_category_jobs, generated_files, report_inventory_files)
+    if FAILURES:
+        print(f"[!] Completed with failures: {FAILURES}")
+        sys.exit(1)

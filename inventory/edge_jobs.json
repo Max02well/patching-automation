@@ -1,0 +1,12 @@
+[
+    {
+        "hostname": "bi-win-02",
+        "ip": "10.52.0.12",
+        "os": "Microsoft Windows Server 2022 Standard",
+        "os_version": "10.0.20348",
+        "category": "edge",
+        "vuln_count": 1,
+        "severity": "Medium",
+        "title": "Microsoft Edge: Multiple Vulnerabilities"
+    }
+]
