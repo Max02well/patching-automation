@@ -1,0 +1,12 @@
+[
+    {
+        "hostname": "de-win-01",
+        "ip": "10.52.0.17",
+        "os": "Microsoft Windows Server 2022 Standard",
+        "os_version": "10.0.20348",
+        "category": "winscp",
+        "vuln_count": 1,
+        "severity": "Medium",
+        "title": "WinSCP: CVE-2025-2222"
+    }
+]

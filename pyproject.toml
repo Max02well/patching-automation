@@ -11,3 +11,8 @@ dependencies = [
     "urllib3>=2.8.0",
     "uvicorn[standard]>=0.54.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "synthetic_vm",
+]

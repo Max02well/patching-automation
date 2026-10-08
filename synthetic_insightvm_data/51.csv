@@ -1,6 +1,0 @@
-Asset IP Address,Asset Names,Asset OS Name,Asset OS Version,Vulnerability Title,Severity,Solution,Vulnerability Proof
-10.52.0.10,bi-win-05,Microsoft Windows Server 2022 Standard,10.0.20348,Microsoft VS Code: CVE-2025-1111,Low,Upgrade Microsoft Visual Studio Code,VS Code 1.96.2 installed
-192.168.1.1,Server1,Windows 10,20H2,CVE-2021-44228,High,Update to version 8.3.3,Proof of concept available
-10.52.0.11,bi-win-06,Microsoft Windows Server 2022 Standard,10.0.20348,Microsoft VS Code: CVE-2025-1111,Low,Upgrade Microsoft Visual Studio Code,VS Code 1.96.2 installed
-10.52.0.12,bi-win-04,Microsoft Windows Server 2019 Standard,10.0.17763,7-Zip: Multiple Vulnerabilities,High,Upgrade 7-Zip to version 24.09 or later,7-Zip 24.07 installed
-

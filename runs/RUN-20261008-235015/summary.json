@@ -1,0 +1,206 @@
+{
+  "dry_run": true,
+  "reports": [
+    {
+      "report_id": "52",
+      "team": "BI Team",
+      "assets": 6
+    },
+    {
+      "report_id": "59",
+      "team": "DE Team",
+      "assets": 6
+    }
+  ],
+  "categories": [
+    {
+      "category": "7zip",
+      "display_name": "7-Zip",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "High": 1
+      }
+    },
+    {
+      "category": "CVE-2013-3900",
+      "display_name": "CVE-2013-3900",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "Medium": 1
+      }
+    },
+    {
+      "category": "CVE-2022-0001",
+      "display_name": "Intel Branch History Injection",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "High": 1
+      }
+    },
+    {
+      "category": "ICMP",
+      "display_name": "ICMP Redirect",
+      "platform": "linux",
+      "hosts": 1,
+      "severity": {
+        "Low": 1
+      }
+    },
+    {
+      "category": "R_SSH_CBC",
+      "display_name": "SSH CBC Ciphers",
+      "platform": "linux",
+      "hosts": 1,
+      "severity": {
+        "High": 1
+      }
+    },
+    {
+      "category": "R_SSH_HMAC",
+      "display_name": "SSH Weak HMAC",
+      "platform": "linux",
+      "hosts": 1,
+      "severity": {
+        "Medium": 1
+      }
+    },
+    {
+      "category": "R_SSH_KEX",
+      "display_name": "SSH Weak Key Exchange",
+      "platform": "linux",
+      "hosts": 1,
+      "severity": {
+        "Medium": 1
+      }
+    },
+    {
+      "category": "RhelOS",
+      "display_name": "Red Hat Enterprise Linux",
+      "platform": "linux",
+      "hosts": 2,
+      "severity": {
+        "Critical": 1,
+        "High": 1
+      }
+    },
+    {
+      "category": "W_TLS_Sweet32",
+      "display_name": "TLS SWEET32",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "Medium": 1
+      }
+    },
+    {
+      "category": "chrome",
+      "display_name": "Google Chrome",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "High": 1
+      }
+    },
+    {
+      "category": "edge",
+      "display_name": "Microsoft Edge",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "Medium": 1
+      }
+    },
+    {
+      "category": "firefox",
+      "display_name": "Mozilla Firefox",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "High": 1
+      }
+    },
+    {
+      "category": "sql",
+      "display_name": "Microsoft SQL Server",
+      "platform": "windows",
+      "hosts": 2,
+      "severity": {
+        "Critical": 1,
+        "High": 1
+      }
+    },
+    {
+      "category": "sql2019",
+      "display_name": "Microsoft SQL Server 2019",
+      "platform": "windows",
+      "hosts": 2,
+      "severity": {
+        "Critical": 1,
+        "High": 1
+      }
+    },
+    {
+      "category": "vscode",
+      "display_name": "Microsoft VS Code",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "Low": 1
+      }
+    },
+    {
+      "category": "windowsos2019",
+      "display_name": "Windows Server 2019 OS Patching",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "Critical": 1
+      }
+    },
+    {
+      "category": "winscp",
+      "display_name": "WinSCP",
+      "platform": "windows",
+      "hosts": 1,
+      "severity": {
+        "Medium": 1
+      }
+    }
+  ],
+  "files": [
+    "inventory\\7zip_jobs.json",
+    "inventory\\CVE-2013-3900_jobs.json",
+    "inventory\\CVE-2022-0001_jobs.json",
+    "l_inventory\\ICMP_jobs.json",
+    "l_inventory\\R_SSH_CBC_jobs.json",
+    "l_inventory\\R_SSH_HMAC_jobs.json",
+    "l_inventory\\R_SSH_KEX_jobs.json",
+    "l_inventory\\RhelOS_jobs.json",
+    "inventory\\W_TLS_Sweet32_jobs.json",
+    "inventory\\chrome_jobs.json",
+    "inventory\\edge_jobs.json",
+    "inventory\\firefox_jobs.json",
+    "inventory\\sql_jobs.json",
+    "inventory\\sql2019_jobs.json",
+    "inventory\\vscode_jobs.json",
+    "inventory\\windowsos2019_jobs.json",
+    "inventory\\winscp_jobs.json",
+    "inventory\\remediation_inventory.ini",
+    "l_inventory\\l_remediation_inventory.ini",
+    "inventory\\remediation_control.json",
+    "l_inventory\\l_remediation_control.json"
+  ],
+  "team_files": {
+    "52": [
+      "inventory\\bi_team_remediation_inventory.ini"
+    ],
+    "59": [
+      "inventory\\de_team_remediation_inventory.ini",
+      "l_inventory\\de_team_l_remediation_inventory.ini"
+    ]
+  },
+  "failures": []
+}

@@ -1,9 +1,0 @@
-Asset IP Address,Asset Names,Asset OS Name,Asset OS Version,Vulnerability Title,Severity,Solution,Vulnerability Proof
-10.59.0.21,de-linux-01,Red Hat Enterprise Linux Server release 8.10,8.10,Red Hat: CVE-2025-0101: kernel security update,Critical,Update the affected Red Hat packages,Package kernel-4.18.0-553.5.1.el8 is installed
-10.59.0.21,de-linux-01,Red Hat Enterprise Linux Server release 8.10,8.10,SSH Weak Message Authentication Code Algorithms,Medium,Disable weak SSH MAC algorithms,"hmac-sha1 is enabled"
-10.59.0.22,de-linux-02,Red Hat Enterprise Linux Server release 9.4,9.4,SSH CBC vulnerability,High,Disable SSH CBC ciphers,CBC cipher is offered by sshd
-10.59.0.22,de-linux-02,Red Hat Enterprise Linux Server release 9.4,9.4,SSH Server Supports Weak Key Exchange Algorithms,Medium,Disable diffie-hellman-group1-sha1,diffie-hellman-group1-sha1 is enabled
-10.59.0.23,de-linux-03,Red Hat Enterprise Linux Server release 8.10,8.10,ICMP redirection enabled,Low,Disable ICMP redirects in sysctl,net.ipv4.conf.all.accept_redirects = 1
-10.59.0.24,de-linux-04,Red Hat Enterprise Linux Server release 9.4,9.4,Red Hat: CVE-2024-9999: openssl security update,High,Update the affected Red Hat packages,Package openssl-3.0.7 is installed
-10.52.0.11,bi-win-01,Microsoft Windows Server 2019 Standard,10.0.17763,Microsoft SQL Server: Security Update,Critical,Install the latest Microsoft SQL Server cumulative update,Microsoft SQL Server 2019 build 15.0.4316.3
-10.52.0.17,de-win-01,Microsoft Windows Server 2022 Standard,10.0.20348,WinSCP: CVE-2025-2222,Medium,Upgrade WinSCP to the latest supported release,WinSCP 6.3.7 installed

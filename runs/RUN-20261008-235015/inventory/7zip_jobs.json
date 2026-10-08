@@ -1,0 +1,12 @@
+[
+    {
+        "hostname": "bi-win-04",
+        "ip": "10.52.0.14",
+        "os": "Microsoft Windows Server 2019 Standard",
+        "os_version": "10.0.17763",
+        "category": "7zip",
+        "vuln_count": 1,
+        "severity": "High",
+        "title": "7-Zip: Multiple Vulnerabilities"
+    }
+]

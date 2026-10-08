@@ -1,0 +1,9 @@
+{
+    "remediation_categories": [
+        "ICMP",
+        "R_SSH_CBC",
+        "R_SSH_HMAC",
+        "R_SSH_KEX",
+        "RhelOS"
+    ]
+}

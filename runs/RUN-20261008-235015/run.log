@@ -1,0 +1,76 @@
+
+======================================================================
+Processing Report ID: 52
+======================================================================
+[+] Report started: synthetic-52-593913ce9cb8
+[STATUS] complete
+
+======================================================================
+Processing Report ID: 59
+======================================================================
+[+] Report started: synthetic-59-73f15f3c61c8
+[STATUS] complete
+[+] Detected remediation categories: 7zip, CVE-2013-3900, CVE-2022-0001, ICMP, R_SSH_CBC, R_SSH_HMAC, R_SSH_KEX, RhelOS, W_TLS_Sweet32, chrome, edge, firefox, sql, sql2019, vscode, windowsos2019, winscp
+[+] JSON saved: inventory/7zip_jobs.json
+[+] JSON saved: inventory/CVE-2013-3900_jobs.json
+[+] JSON saved: inventory/CVE-2022-0001_jobs.json
+[+] JSON saved: l_inventory/ICMP_jobs.json
+[+] JSON saved: l_inventory/R_SSH_CBC_jobs.json
+[+] JSON saved: l_inventory/R_SSH_HMAC_jobs.json
+[+] JSON saved: l_inventory/R_SSH_KEX_jobs.json
+[+] JSON saved: l_inventory/RhelOS_jobs.json
+[+] JSON saved: inventory/W_TLS_Sweet32_jobs.json
+[+] JSON saved: inventory/chrome_jobs.json
+[+] JSON saved: inventory/edge_jobs.json
+[+] JSON saved: inventory/firefox_jobs.json
+[+] JSON saved: inventory/sql_jobs.json
+[+] JSON saved: inventory/sql2019_jobs.json
+[+] JSON saved: inventory/vscode_jobs.json
+[+] JSON saved: inventory/windowsos2019_jobs.json
+[+] JSON saved: inventory/winscp_jobs.json
+[+] Inventory created: inventory/remediation_inventory.ini
+[DRY RUN] Would upload to GitLab: inventory/remediation_inventory.ini
+[+] Inventory created: l_inventory/l_remediation_inventory.ini
+[DRY RUN] Would upload to GitLab: l_inventory/l_remediation_inventory.ini
+[+] Control file created: inventory/remediation_control.json
+[+] Control file created: l_inventory/l_remediation_control.json
+[+] Inventory created: inventory/bi_team_remediation_inventory.ini
+[DRY RUN] Would upload to GitLab: inventory/bi_team_remediation_inventory.ini
+[+] Inventory created: inventory/de_team_remediation_inventory.ini
+[DRY RUN] Would upload to GitLab: inventory/de_team_remediation_inventory.ini
+[+] Inventory created: l_inventory/de_team_l_remediation_inventory.ini
+[DRY RUN] Would upload to GitLab: l_inventory/de_team_l_remediation_inventory.ini
+[+] Sending remediation report email...
+[+] Attached: 7zip_jobs.json
+[+] Attached: CVE-2013-3900_jobs.json
+[+] Attached: CVE-2022-0001_jobs.json
+[+] Attached: ICMP_jobs.json
+[+] Attached: R_SSH_CBC_jobs.json
+[+] Attached: R_SSH_HMAC_jobs.json
+[+] Attached: R_SSH_KEX_jobs.json
+[+] Attached: RhelOS_jobs.json
+[+] Attached: W_TLS_Sweet32_jobs.json
+[+] Attached: chrome_jobs.json
+[+] Attached: edge_jobs.json
+[+] Attached: firefox_jobs.json
+[+] Attached: sql_jobs.json
+[+] Attached: sql2019_jobs.json
+[+] Attached: vscode_jobs.json
+[+] Attached: windowsos2019_jobs.json
+[+] Attached: winscp_jobs.json
+[+] Attached: remediation_inventory.ini
+[+] Attached: l_remediation_inventory.ini
+[+] Attached: remediation_control.json
+[+] Attached: l_remediation_control.json
+[+] Test email saved: email_test\remediation_report_20261008_235019.eml
+[+] EMAIL_MODE=file - no SMTP connection attempted
+[+] Attached: bi_team_remediation_inventory.ini
+[+] Test email saved: email_test\team_BI_Team_20261008_235019.eml
+[+] Team email saved locally for BI Team
+[+] Attached: de_team_remediation_inventory.ini
+[+] Attached: de_team_l_remediation_inventory.ini
+[+] Test email saved: email_test\team_DE_Team_20261008_235019.eml
+[+] Team email saved locally for DE Team
+
+[+] Remediation automation completed
+[!] Tower patching runs on its configured schedule.

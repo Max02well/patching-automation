@@ -1,0 +1,11 @@
+{
+  "id": "RUN-20261008-234659",
+  "status": "failed",
+  "actor": "unknown",
+  "dry_run": true,
+  "reports": "default",
+  "started_at": "2026-10-08T20:46:59+00:00",
+  "ended_at": "2026-10-08T20:47:07+00:00",
+  "exit_code": 1,
+  "cancel_requested": false
+}
